@@ -1,0 +1,50 @@
+# robots.txt для iRay Optics
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /data/
+Disallow: /includes/
+Disallow: /logs/
+Disallow: /*.json$
+Disallow: /*.php$
+Disallow: /404.html
+Disallow: /403.html
+Disallow: /500.html
+
+# Разрешаем доступ к CSS и JS
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /fonts/
+
+# Поисковые боты
+User-agent: Googlebot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content
+
+User-agent: Bingbot
+Allow: /
+
+# Блокируем плохих ботов
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Crawl-delay для вежливого краулинга
+User-agent: *
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://iray-optics.ru/sitemap.xml

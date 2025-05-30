@@ -1,0 +1,91 @@
+{
+    "shops": [
+        {
+            "id": "ozon",
+            "name": "OZON",
+            "logo": "🛒",
+            "url": "https://ozon.ru",
+            "description": "Крупнейший маркетплейс России",
+            "shipping": {
+                "free_from": 3000,
+                "express": true,
+                "pickup_points": true,
+                "average_days": "1-3"
+            },
+            "payment_methods": [
+                "card",
+                "cash",
+                "installments"
+            ],
+            "benefits": [
+                "Бесплатная доставка от 3000₽",
+                "Пункты выдачи по всей России",
+                "Рассрочка до 6 месяцев"
+            ],
+            "tracking_params": {
+                "utm_source": "iray-optics",
+                "utm_medium": "referral",
+                "utm_campaign": "thermal-sights"
+            }
+        },
+        {
+            "id": "wildberries",
+            "name": "Wildberries",
+            "logo": "🟣",
+            "url": "https://wildberries.ru",
+            "description": "Лидер онлайн-торговли в России",
+            "shipping": {
+                "free_from": 0,
+                "express": true,
+                "pickup_points": true,
+                "average_days": "1-3"
+            },
+            "payment_methods": [
+                "card",
+                "cash",
+                "wb_wallet"
+            ],
+            "benefits": [
+                "Бесплатная доставка",
+                "Более 30 000 пунктов выдачи",
+                "Примерка перед покупкой"
+            ],
+            "tracking_params": {
+                "utm_source": "iray-optics",
+                "utm_medium": "referral",
+                "utm_campaign": "thermal-sights"
+            }
+        },
+        {
+            "id": "opticmarket",
+            "name": "OpticMarket",
+            "logo": "🎯",
+            "url": "https://opticmarket.ru",
+            "description": "Специализированный магазин оптики",
+            "shipping": {
+                "free_from": 10000,
+                "express": false,
+                "pickup_points": false,
+                "average_days": "2-5"
+            },
+            "payment_methods": [
+                "card",
+                "bank_transfer",
+                "cash"
+            ],
+            "benefits": [
+                "Профессиональная консультация",
+                "Гарантия от производителя",
+                "Сервисное обслуживание"
+            ],
+            "tracking_params": {
+                "utm_source": "iray-optics",
+                "utm_medium": "referral",
+                "utm_campaign": "thermal-sights"
+            }
+        }
+    ],
+    "default_shop": "opticmarket",
+    "price_update_frequency": "daily",
+    "last_updated": "2024-01-15T10:00:00Z"
+}

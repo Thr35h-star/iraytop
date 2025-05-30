@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <!-- Главная страница -->
+    <url>
+        <loc>https://iray-optics.ru/</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Страницы товаров -->
+    <url>
+        <loc>https://iray-optics.ru/products/rico-rh50r</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://iray-optics.ru/images/products/rico-rh50r/main.jpg</image:loc>
+            <image:title>iRay Rico RH50R - Тепловизионный прицел</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://iray-optics.ru/products/saim-sct40</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://iray-optics.ru/images/products/saim-sct40/main.jpg</image:loc>
+            <image:title>iRay Saim SCT40 - Тепловизионный прицел</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://iray-optics.ru/products/tube-th50</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://iray-optics.ru/images/products/tube-th50/main.jpg</image:loc>
+            <image:title>iRay Tube TH50 - Тепловизионный прицел</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://iray-optics.ru/products/bolt-th50c</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://iray-optics.ru/images/products/bolt-th50c/main.jpg</image:loc>
+            <image:title>iRay Bolt TH50C - Тепловизионный прицел</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://iray-optics.ru/products/geni-gl35r</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://iray-optics.ru/images/products/geni-gl35r/main.jpg</image:loc>
+            <image:title>iRay Geni GL35R - Тепловизионный прицел</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://iray-optics.ru/products/zoom-zh50</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://iray-optics.ru/images/products/zoom-zh50/main.jpg</image:loc>
+            <image:title>iRay Zoom ZH50 - Тепловизионный прицел</image:title>
+        </image:image>
+    </url>
+    
+    <!-- Страница благодарности (низкий приоритет) -->
+    <url>
+        <loc>https://iray-optics.ru/thank-you</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+    </url>
+</urlset>

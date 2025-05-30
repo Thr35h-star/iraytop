@@ -1,0 +1,510 @@
+/* ======================
+   СТИЛИ ДЛЯ СТРАНИЦ ТОВАРОВ
+   ====================== */
+
+/* Базовые стили для страницы товара */
+.product-container {
+    padding-top: 100px;
+    margin-top: 0;
+}
+
+.product-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+/* Галерея товара */
+.product-gallery {
+    position: relative;
+}
+
+.main-image {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #2d5016;
+}
+
+.main-image::before {
+    content: '🎯';
+    font-size: 150px;
+    opacity: 0.1;
+    position: absolute;
+    animation: pulse 3s infinite;
+}
+
+/* Бейдж */
+.badge-hot {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ff4444;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    animation: bounce 2s infinite;
+}
+
+/* Миниатюры */
+.thumbnails {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.thumb {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+    border: 2px solid #2d5016;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    opacity: 0.6;
+}
+
+.thumb:hover, .thumb.active {
+    opacity: 1;
+    border-color: #a8d063;
+    transform: scale(1.05);
+}
+
+/* Информация о товаре */
+.product-info h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #a8d063;
+}
+
+.product-subtitle {
+    font-size: 20px;
+    color: #999;
+    margin-bottom: 30px;
+}
+
+/* Характеристики */
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    background: rgba(45, 80, 22, 0.2);
+    border: 1px solid #2d5016;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+.feature-item:hover {
+    background: rgba(45, 80, 22, 0.3);
+    border-color: #a8d063;
+    transform: translateY(-2px);
+}
+
+.feature-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.feature-title {
+    font-size: 18px;
+    color: #a8d063;
+    margin-bottom: 5px;
+}
+
+.feature-value {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Выбор магазина */
+.shop-selection {
+    background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+    border: 2px solid #2d5016;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 50px;
+}
+
+.shop-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #a8d063;
+    text-transform: uppercase;
+}
+
+.shops-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.shop-card {
+    background: rgba(0,0,0,0.5);
+    border: 2px solid #2d5016;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.shop-card:hover {
+    transform: translateY(-5px);
+    border-color: #a8d063;
+    box-shadow: 0 10px 30px rgba(168, 208, 99, 0.3);
+}
+
+.shop-logo {
+    font-size: 48px;
+    margin-bottom: 15px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.shop-price {
+    font-size: 32px;
+    color: #ff4444;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.shop-discount {
+    background: rgba(255, 68, 68, 0.2);
+    color: #ff4444;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.shop-button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(45deg, #4a7c28, #2d5016);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: block;
+}
+
+.shop-button:hover {
+    background: linear-gradient(45deg, #5a8c38, #3d6026);
+    transform: scale(1.02);
+}
+
+/* Описание товара */
+.product-description {
+    background: rgba(26, 26, 26, 0.5);
+    border: 1px solid #2d5016;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 50px;
+}
+
+.description-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #a8d063;
+}
+
+.description-text {
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Таблица характеристик */
+.specs-table {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.specs-table tr {
+    border-bottom: 1px solid rgba(45, 80, 22, 0.3);
+}
+
+.specs-table td {
+    padding: 15px 0;
+}
+
+.specs-table td:first-child {
+    color: #a8d063;
+    font-weight: bold;
+}
+
+.specs-table td:last-child {
+    text-align: right;
+    color: #ccc;
+}
+
+/* ======================
+   МОБИЛЬНАЯ ВЕРСИЯ
+   ====================== */
+@media (max-width: 767px) {
+    /* Контейнер */
+    .product-container {
+        padding-top: 70px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    /* Основная сетка */
+    .product-layout {
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin-bottom: 20px;
+    }
+    
+    /* Галерея - только фото без лишних элементов */
+    .product-gallery {
+        margin: 0 -15px; /* Растягиваем на всю ширину */
+    }
+    
+    .main-image {
+        height: 350px;
+        border-radius: 0;
+        border: none;
+        background: #000;
+    }
+    
+    /* Скрываем ненужные элементы на мобильных */
+    .main-image::before,
+    .badge-hot,
+    .thumbnails,
+    .cta-section {
+        display: none !important;
+    }
+    
+    /* Информация о товаре */
+    .product-info {
+        padding: 20px 15px;
+        text-align: center;
+    }
+    
+    .product-info h1 {
+        font-size: 26px;
+        margin-bottom: 10px;
+        line-height: 1.2;
+    }
+    
+    .product-subtitle {
+        font-size: 14px;
+        margin-bottom: 20px;
+        color: #999;
+    }
+    
+    /* Характеристики в одну колонку */
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 25px;
+        padding: 0 15px;
+    }
+    
+    .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+        background: rgba(45, 80, 22, 0.15);
+    }
+    
+    .feature-icon {
+        font-size: 24px;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+    
+    .feature-content {
+        text-align: left;
+        flex: 1;
+    }
+    
+    .feature-title {
+        font-size: 14px;
+        margin-bottom: 2px;
+    }
+    
+    .feature-value {
+        font-size: 13px;
+    }
+    
+    /* Выбор магазина - оптимизированный */
+    .shop-selection {
+        margin: 20px 0;
+        padding: 25px 15px;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        background: rgba(26, 26, 26, 0.95);
+    }
+    
+    .shop-title {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+    
+    .section-subtitle {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    
+    /* Карточки магазинов - компактный вид */
+    .shops-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .shop-card {
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    
+    .shop-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1;
+    }
+    
+    .shop-logo {
+        font-size: 32px;
+        height: auto;
+        margin-bottom: 0;
+    }
+    
+    .shop-info {
+        text-align: left;
+    }
+    
+    .shop-name {
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+    
+    .shop-price {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    
+    .shop-discount {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        font-size: 11px;
+        padding: 3px 8px;
+        margin-bottom: 0;
+    }
+    
+    .shop-button {
+        padding: 10px 20px;
+        font-size: 14px;
+        width: auto;
+        flex-shrink: 0;
+    }
+    
+    /* Описание товара */
+    .product-description {
+        margin: 20px 0;
+        padding: 25px 15px;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+    
+    .description-title {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .description-text {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    
+    /* Таблица характеристик */
+    .specs-table {
+        font-size: 13px;
+    }
+    
+    .specs-table td {
+        padding: 10px 0;
+        font-size: 13px;
+    }
+    
+    /* Дополнительные секции */
+    .product-features,
+    .product-package {
+        margin: 20px 0;
+        padding: 25px 15px;
+        background: rgba(26, 26, 26, 0.5);
+        border: 1px solid #2d5016;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+    
+    .product-features ul li,
+    .product-package ul li {
+        font-size: 14px;
+        padding: 8px 0 8px 25px;
+    }
+    
+    .product-package > div {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Планшеты */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .product-container {
+        padding-top: 100px;
+    }
+    
+    .features-grid {
+        gap: 15px;
+    }
+    
+    .shop-title {
+        font-size: 28px;
+    }
+}
